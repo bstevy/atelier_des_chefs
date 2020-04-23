@@ -52,6 +52,5 @@ working_dir = os.path.join(".", "recettes",)
 for old_name in os.listdir(working_dir):
     new_name = old_name.replace("Recette_de_", "")
     os.rename(
-        os.path.join(working_dir, old_name),
-        os.path.join(working_dir, new_name),
+        os.path.join(working_dir, old_name), os.path.join(working_dir, new_name),
     )
